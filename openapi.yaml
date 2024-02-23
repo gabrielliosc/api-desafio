@@ -1,12 +1,18 @@
 openapi: 3.0.3
 info:
   title: API Desafio 30 dias
-  description: |-
-    Api desenvolvida para ser utilizada pelo desafio de 30 dias de frontend da comunidade de Mulheres e tecnologia
-    
+  description: >-
+    Api desenvolvida para ser utilizada pelo desafio de 30 dias de frontend da
+    comunidade de Mulheres e tecnologia
+
+
     Links úteis:
-    - [Repositório do desafio](https://github.com/Mulheres-e-Tecnologia-M-T/30-dias-programando)
+
+    - [Repositório do
+    desafio](https://github.com/Mulheres-e-Tecnologia-M-T/30-dias-programando)
+
     - [Respositório da api](https://github.com/gabrielliosc/api-desafio)
+
     - [Link para a comunidade](https://linktr.ee/mulheresetecnologia)
   termsOfService: http://swagger.io/terms/
   contact:
@@ -50,7 +56,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Users'          
+                $ref: '#/components/schemas/Users'
             application/xml:
               schema:
                 $ref: '#/components/schemas/Users'
@@ -84,7 +90,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/UsersView'          
+                  $ref: '#/components/schemas/UsersView'
 components:
   schemas:
     Users:
@@ -128,4 +134,4 @@ components:
         created_at:
           type: string
           format: date-time
-          example: 2024-02-23 15:04:36
+          example: 2024-02-23T15:04:36.000Z
